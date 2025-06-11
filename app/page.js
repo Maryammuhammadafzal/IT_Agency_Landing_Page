@@ -1,13 +1,14 @@
 
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
-
+import '@fontsource/darker-grotesque/300.css';
+import '@fontsource/darker-grotesque/400.css';
+import '@fontsource/darker-grotesque/500.css';
+import '@fontsource/darker-grotesque/700.css';
+import Button from '@mui/material/Button';
+import HeroPage from './Hero/Page';
 export default function Home() {
   return (
     <div className="main w-full h-auto bg-white overflow-hidden">
-
+ <HeroPage/>
     </div>
   );
 }
