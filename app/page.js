@@ -12,6 +12,7 @@ import HeroPage from './Hero/Page';
 import TextSlider from '@/component/TextSlider';
 import AboutPage from './About/Page';
 import ServicesPage from './Services/Page';
+import WorkPage from './Work/Page';
 export default function Home() {
   return (
     <div className="main w-full h-auto bg-white overflow-hidden">
@@ -20,6 +21,7 @@ export default function Home() {
  <AboutPage/>
  <TextSlider text="Elevate Your Brand,"/>
  <ServicesPage/>
+ <WorkPage/>
     </div>
   );
 }

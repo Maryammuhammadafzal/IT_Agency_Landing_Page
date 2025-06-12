@@ -6,7 +6,7 @@ const ServicesPage = () => {
 
    let services_data = [
     {
-      title : "web development",
+      title : "Web Development",
       description: "Build responsive, high-performance websites that engage and convert visitors. Our developers leverage the latest technologies to deliver exceptional user experiences."
     },
     {
@@ -41,7 +41,7 @@ const ServicesPage = () => {
          {services_data && services_data.map(({title , description}, index) => (
             <div key={index} className="card w-[340px] h-[330px] flex justify-center items-center p-3 border-2  border-orange-500 rounded-3xl">
             <div className=' w-full h-full flex flex-col gap-4 justify-center items-center text-center'>
-              <h2 className="text-[40px] font-bold">{title}</h2>
+              <h2 className="text-[40px] leading-8 font-bold">{title}</h2>
                <p className="text-black/75 xl:leading-5 sm:leading-4 leading-3 pr-2 font-medium sm:text-base text-xs md:text-xl">
                   {description}
                   </p>
