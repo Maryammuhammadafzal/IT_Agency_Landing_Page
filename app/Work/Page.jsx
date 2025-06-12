@@ -1,24 +1,32 @@
 import React from "react";
 import ExploreIcon from "@mui/icons-material/Explore";
 import Arrow from "../../public/images/arrow.png";
+import Icon1 from "../../public/images/icon-1.svg"
+import Icon2 from "../../public/images/icon-2.svg"
+import Icon3 from "../../public/images/icon-3.svg"
+import Icon4 from "../../public/images/icon-4.svg"
 const WorkPage = () => {
   let work_data = [
     {
+      icon: Icon1.src,
       title: "Discover",
       description:
         "Share your vision and goals with us during an initial consultation.",
     },
     {
+      icon: Icon2.src,
       title: "Planning",
       description:
         "We craft a tailored plan with clear timelines and deliverables.",
     },
     {
+      icon: Icon3.src,
       title: "Execution",
       description:
         "Our team brings your ideas to life with creativity and precision.",
     },
     {
+      icon: Icon4.src,
       title: "Optimization",
       description:
         "Post-launch, we analyze performance and refine strategies for continued success.",
@@ -34,19 +42,20 @@ const WorkPage = () => {
           </h1>
           <div className="w-full h-auto flex justify-center items-center">
             {work_data &&
-              work_data.map(({ title, description }, index) => (
-                <div className="w-auto h-auto flex justify-center items-center">
-                  <div className="content w-[250px] flex justify-center p-2 items-center flex-col gap-3">
-                    <div className="icon w-18 h-18 border-2 border-white rounded-full flex justify-center items-center ">
-                      <ExploreIcon fontSize="large" />
+              work_data.map(({ title, description, icon }, index) => (
+                <div key={index} className="w-auto h-auto flex justify-center items-start">
+                  <div className="content lg:w-[230px] md:w-[150px] flex justify-center items-center flex-col gap-3">
+                    <div className="icon lg:w-32 lg:h-32 md:w-20 md:h-20 w-12 h-12 border-2 border-white rounded-full flex justify-center items-center ">
+                      {/* <ExploreIcon fontSize="large" /> */}
+                      <img src={icon} alt="icon" className="max-md:w-[28px] max-lg:w-[34px] max-sm:w-[24px]" />
                     </div>
-                    <h2 className="text-[32px] leading-8">{title}</h2>
-                    <p className=" text-center xl:leading-5 sm:leading-4 leading-3 pr-2 font-medium sm:text-sm text-xs md:text-base">
+                    <h2 className="lg:text-[32px] sm:text-2xl leading-8">{title}</h2>
+                    <p className=" text-center xl:leading-5 md:leading-4 leading-3 font-medium sm:text-sm text-sm md:text-base">
                       {description}
                     </p>
                   </div>
-                  <div className="arrow flex justify-center items-center">
-                    <img src={Arrow.src} alt="arrow" className="w-[70px]" />
+                  <div className={`${index== 3 ? 'hidden' : 'block'} arrow flex justify-center items-center pt-10`}>
+                    <img src={Arrow.src} alt="arrow" className="lg:w-[70px] md:w-[40px]" />
                   </div>
                 </div>
               ))}
