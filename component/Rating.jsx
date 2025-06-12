@@ -27,9 +27,9 @@ const Rating = () => {
         ]
   return (
     <div className="w-full h-auto flex justify-center items-center py-10 px-3">
-      <div className="lg:w-[80%] md:w-[90%] w-full flex justify-between items-center">
+      <div className="lg:w-[80%] md:w-[90%] w-full flex max-md:flex-wrap max-md:justify-center max-md:gap-5 justify-between items-center">
         {rating_data && rating_data.map(({number , title , type}, index)=> (
-                <div className="flex flex-col font-semibold">
+                <div className="flex flex-col justify-center items-center gap-2 font-semibold">
           <h2 className="text-4xl md:text-5xl  lg:text-7xl max-xs:text-4xl font-extrabold text-orange-500">
             <CountUp end={number} duration={5} />{type}
           </h2>
