@@ -29,7 +29,7 @@ const Footer = () => {
     <div className="w-full flex h-auto px-3 py-6  font-[Darker Grotesque] justify-center items-center">
       <div className="w-[95%] flex justify-center rounded-4xl items-center shadow-2xl">
         <div className="w-full h-full flex-col flex justify-center items-center">
-          <div className="h-[100px] w-full p-4 flex justify-center items-center rounded-tl-4xl rounded-tr-4xl text-white bg-orange-500">
+          <div className="h-[100px] w-full sm:p-4 p-0 flex justify-center items-center rounded-tl-4xl rounded-tr-4xl text-white bg-orange-500">
             <ul className="w-full h-auto flex justify-evenly items-center">
               {nav_data.map(({ name, link }, index) => (
                 <li key={index} className="px-2 py-1">
@@ -43,13 +43,36 @@ const Footer = () => {
                     href={link}
                     className="lg:text-2xl hover:border-b-4 border-white hover:mb-2 font-medium md:text-xl sm:text-lg text-base sm:hidden block"
                   >
-                    {
-                    index == 0 && <Home/> ||
-                    index == 1 && <Person/> ||
-                    index == 2 && <DisplaySettings/> ||
-                    index == 3 && <Work/> ||
-                    index == 4 && <Phone/> 
-                    }
+                   {(index == 0 && (
+                                         <div className="flex flex-col justify-center items-center w-auto h-auto">
+                                           <Home />
+                                           <p className="text-xs max-[350px]:text-[10px] text-white">{name}</p>
+                                         </div>
+                                       )) ||
+                                         (index == 1 && (
+                                           <div className="flex flex-col justify-center items-center w-auto h-auto">
+                                             <Person />
+                                             <p className="text-xs max-[350px]:text-[10px] text-white">{name}</p>
+                                           </div>
+                                         )) ||
+                                         (index == 2 && (
+                                           <div className="flex flex-col justify-center items-center w-auto h-auto">
+                                             <DisplaySettings />
+                                             <p className="text-xs max-[350px]:text-[10px] text-white">{name}</p>
+                                           </div>
+                                         )) ||
+                                         (index == 3 && (
+                                           <div className="flex flex-col justify-center items-center w-auto h-auto">
+                                             <Work />
+                                             <p className="text-xs max-[350px]:text-[10px] text-white">{name}</p>
+                                           </div>
+                                         )) ||
+                                         (index == 4 && (
+                                           <div className="flex flex-col justify-center items-center w-auto h-auto">
+                                             <Phone />
+                                             <p className="text-xs max-[350px]:text-[10px] text-white">{name}</p>
+                                           </div>
+                                         ))}
                   </a>
                 </li>
               ))}
