@@ -2,7 +2,7 @@ import React from "react";
 import HeroImage from "../../public/images/hero-image.png";
 const HeroPage = () => {
   return (
-    <div className="home mb-0 w-full font-[Darker Grotesque] h-auto flex justify-center items-start pt-6">
+    <div className="home mb-0 w-full font-[Darker Grotesque] h-auto flex justify-center items-start">
       <div className="w-full p-2 sm:w-[90%] lg:w-[85%]  h-auto flex md:flex-row flex-col justify-center items-center gap-3">
         <div className="left md:w-[50%] w-full h-auto space-y-5">
           <h1 className="font-bold font-[Montserrat] 2xl:text-7xl 2xl:leading-20 xl:text-6xl lg:text-5xl md:text-4xl min-[768px]:text-4xl text-6xl xl:leading-16 lg:leading-14 max-sm:text-5xl max-xs:text-4xl">
@@ -15,23 +15,23 @@ const HeroPage = () => {
             our team is dedicated to elevating your brand in the digital
             landscape.
           </p>
-          <div className="flex gap-12 max-sm:gap-5 py-3 max-xs:py-0">
+          <div className="flex gap-12 max-sm:gap-5 items-center py-3 max-xs:py-0">
             <div className="flex flex-col font-semibold">
               <h2 className="text-4xl  md:text-5xl lg:text-7xl max-xs:text-4xl font-extrabold text-orange-500">
                 +500
               </h2>
-              <p className="text-2xl leading-none md:text-xl max-xs:text-base font-semibold pl-2">
+              <p className="text-base leading-none md:text-xl font-semibold pl-2">
                 Website Dilevered
               </p>
             </div>
-            <div className="font-medium h-full flex justify-center items-center text-9xl">
+            <div className="font-medium h-full flex justify-center items-center lg:text-9xl md:text-7xl text-5xl">
               /
             </div>
             <div className="flex flex-col font-semibold">
               <h2 className="text-4xl md:text-5xl  lg:text-7xl max-xs:text-4xl font-extrabold text-orange-500">
                 +10
               </h2>
-              <p className="text-2xl md:text-xl leading-none max-xs:text-base font-semibold pl-2">
+              <p className="text-base md:text-xl leading-none font-semibold pl-2">
                 Year Of Expertise
               </p>
             </div>

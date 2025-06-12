@@ -32,7 +32,7 @@ const Header = () => {
             <img src={Logo.src} alt="logo" />
           </a>
           <nav className="w-auto h-auto flex justify-center items-center">
-            <ul className="w-auto flex justify-center items-center lg:gap-6 gap-3 h-auto">
+            <ul className="w-auto flex justify-center items-center lg:gap-6 gap-2 h-auto">
               {nav_data.map(({ name, link }, index) => (
                 <li key={index} className="px-2 py-1">
                   <a
