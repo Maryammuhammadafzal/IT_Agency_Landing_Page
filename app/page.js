@@ -2,6 +2,9 @@
 import '@fontsource/darker-grotesque/300.css';
 import '@fontsource/darker-grotesque/400.css';
 import '@fontsource/darker-grotesque/500.css';
+import '@fontsource/darker-grotesque/600.css';
+import '@fontsource/darker-grotesque/700.css';
+import '@fontsource/darker-grotesque/800.css';
 import '@fontsource/darker-grotesque/700.css';
 import '@fontsource/montserrat/800.css';
 import Button from '@mui/material/Button';
