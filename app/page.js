@@ -22,6 +22,7 @@ export default function Home() {
  <TextSlider text="Elevate Your Brand,"/>
  <ServicesPage/>
  <WorkPage/>
+ <TextSlider text="Our Achievements at a Glance:"/>
     </div>
   );
 }
