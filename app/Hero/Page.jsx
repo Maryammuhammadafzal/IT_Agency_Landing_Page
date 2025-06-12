@@ -5,8 +5,7 @@ import CountUp from "react-countup";
 const HeroPage = () => {
 
   
-  return (
-    <div className="home mb-0 lg:pb-20 pb-10 w-full font-[Darker Grotesque] h-auto flex justify-center items-start">
+  return (<div className="home mb-0 lg:pb-20 pb-10 w-full font-[Darker Grotesque] h-auto flex justify-center items-start">
       <div className="w-full p-2 sm:w-[90%] lg:w-[85%]  h-auto flex md:flex-row flex-col justify-center items-center gap-3">
         <div className="left md:w-[50%] w-full h-auto space-y-5">
           <h1 className="font-bold font-[Montserrat] 2xl:text-7xl 2xl:leading-20 xl:text-6xl lg:text-5xl md:text-4xl min-[768px]:text-4xl text-6xl xl:leading-16 lg:leading-14 max-sm:text-5xl max-xs:text-4xl">
@@ -46,6 +45,7 @@ const HeroPage = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 

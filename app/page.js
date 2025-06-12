@@ -14,6 +14,7 @@ import AboutPage from './About/Page';
 import ServicesPage from './Services/Page';
 import WorkPage from './Work/Page';
 import Rating from '@/component/Rating';
+import ContactPage from './Contact/Page';
 export default function Home() {
   return (
     <div className="main w-full h-auto bg-white overflow-hidden">
@@ -25,6 +26,7 @@ export default function Home() {
  <WorkPage/>
  <TextSlider text="Our Achievements at a Glance:"/>
  <Rating/>
+ <ContactPage/>
     </div>
   );
 }
