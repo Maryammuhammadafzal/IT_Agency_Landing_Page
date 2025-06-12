@@ -41,7 +41,7 @@ const HeroPage = () => {
           </Button> */}
         </div>
         <div className="right md:w-[50%] w-full h-auto flex justify-center items-center">
-          <img src={HeroImage} title="Digital Agency" alt="Digital Agency" />
+          <img src={HeroImage.src} title="Digital Agency" alt="Digital Agency" />
         </div>
       </div>
     </div>
