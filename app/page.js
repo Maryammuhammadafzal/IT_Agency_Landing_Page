@@ -11,12 +11,15 @@ import Button from '@mui/material/Button';
 import HeroPage from './Hero/Page';
 import TextSlider from '@/component/TextSlider';
 import AboutPage from './About/Page';
+import ServicesPage from './Services/Page';
 export default function Home() {
   return (
     <div className="main w-full h-auto bg-white overflow-hidden">
  <HeroPage/>
- <TextSlider/>
+ <TextSlider text="Digital Wallet"/>
  <AboutPage/>
+ <TextSlider text="Elevate Your Brand,"/>
+ <ServicesPage/>
     </div>
   );
 }

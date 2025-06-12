@@ -22,7 +22,7 @@ const AboutPage = () => {
   ]
 
   return (
-    <div className="home mb-0 py-10 w-full font-[Darker Grotesque] h-auto flex justify-center items-start">
+    <div className="about mb-0 py-10 w-full font-[Darker Grotesque] h-auto flex justify-center items-start">
       <div className="w-full p-2 sm:w-[90%] lg:w-[85%]  h-auto flex gap-3">
         <div className=" w-full h-auto space-y-5">
           <h1 className="font-extrabold flex flex-col lg:text-8xl  md:text-6xl text-5xl max-sm:text-5xl max-xs:text-4xl">
